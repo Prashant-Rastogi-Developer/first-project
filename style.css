@@ -38,8 +38,11 @@ body {
   width: 100%;
 }
 .base {
+  display: flex;
+  gap: var(--gap);
   padding: var(--gap);
   margin: 2rem 1.5rem;
+  flex-direction: column;
 }
 p {
   color: var(--white);
