@@ -20,6 +20,7 @@
   color: currentColor;
   text-decoration: none;
   box-sizing: border-box;
+  transition: var(--transition);
 }
 html {
   scroll-behavior: smooth;
@@ -31,7 +32,7 @@ body {
   text-transform: capitalize;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: linear-gradient(to top left, red, blue);
+  background-image: linear-gradient(to top left, var(--black), #444444);
 }
 html,
 body {
@@ -42,10 +43,23 @@ body {
   gap: var(--gap);
   padding: var(--gap);
   margin: 2rem 1.5rem;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 p {
   color: var(--white);
 }
 /* body */
+/* -------------------------------------------- */
+/* container1 */
+.card {
+  cursor: pointer;
+  padding: var(--gap);
+  background-size: 100%;
+  border-radius: var(--gap);
+  background-image: linear-gradient(to top left, var(--black), #444444);
+}
+.card:hover {
+  background-size: 300%;
+}
+/* container1 */
 /* -------------------------------------------- */
